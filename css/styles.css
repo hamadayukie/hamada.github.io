@@ -1,5 +1,74 @@
+body {
+  background: rgb(226, 236, 245);
+}
+
 h1 {
-  font-size: 24px;
-  padding-left: 16px;
-  border-left: 8px solid pink;
+  color: rgba(0, 0, 255, 0.308);
+  font-size: 18pt;
+  border-bottom: 1px solid;
+  padding: 8px 16px;
+  margin-bottom: 16pt;
+}
+
+dl {
+  margin: 0;
+  color: rgb(20, 20, 20);
+}
+
+dl > div {
+  margin-bottom: 8px;
+}
+
+dt {
+  color: rgb(235, 19, 19);
+  margin: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+dt::before {
+  content: 'Q.';
+}
+
+dt::after {
+  content:'+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: transform .3s ;
+}
+
+dl > div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  padding: 8px;
+  margin: 0;
+  display: none;
+}
+
+dd::before {
+  content: 'A.';
+}
+
+dl > div.appear dd {
+  display: block;
+  animation: .3s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+body img {
+  padding: 300px;
 }
