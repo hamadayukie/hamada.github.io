@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="jp">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>格安ホームページ作成</title>
-  <link rel="stylesheet" href="css.styles.css">
+<title>パリの花通り</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="author" content="https://paris-hana.com/">
+<meta http-equiv="Pragma" content="">
+<meta http-equiv="Cache-Control" content="">
+<link rel="stylesheet" type="text/css" href="css/base/cssreset.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap/ligature-symbols/ligature-symbols.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<link rel="stylesheet" href="css/base/base.css?d=20211117194310" type="text/css" />
+	<script>
+		$(function(){
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+		});
+		
+        function send_post(){
+            var frm = document.F0;
+            frm.submit();
+        }
+	</script>
+
 </head>
-<body>
-  <h1>elmoのポートフォリオサイト</h1>
-  <h3>webデザイナーの勉強中です</h3>
-  <div class="element js-animation"><img src="img/DSC_0001.jpg" width="200" height="300"></div>
-  
-  <img src="img/DSC_0031.jpg">
-  <p>ホームページ作成。色んなフォーマットの中から選んで頂ければ格安でお作りします。</p>
-  <p>TEL 090-5820-4798</p>
-  <p>hamadayukie838@gmail.com</p>
-  
+
+<body id="top">
+	<div class="wrapper">
+	<header>
+			<div class="container">
+	<div class="row">
+		<a href="https://paris-hana.com" id="top_link"></a>
+		<div id="header_logo"></div>
+	</div>
+</div>
+	</header>
+	<section>
+				<div id="top_main_left"></div>
+<div id="top_main_right"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 text-center index_gate_btn">
+			<a href="https://paris-hana.com/?m=gift/index">
+				<img src="images/base/top_gi.png" style="width: 30%;">
+			</a>
+		</div>
+		<div class="col-xs-6 text-center index_gate_btn">
+			<a href="https://paris-hana.com/?m=gallery/index">
+				<img src="images/base/top_ga.png" style="width: 30%;">
+			</a>
+		</div>
+	</div>
+</div>
+	</section>
+	<footer>
+			<div class="container">
+	<div class="row">
+		<div class="col-sm-2 col-xs-4 text-right">
+			<a href="https://paris-hana.com/?m=blog" class="link">Blog</a>
+		</div>
+		<div class="col-sm-2 col-xs-4 text-right">
+			<a href="https://paris-hana.com/?m=pages/access" class="link">Access</a>
+		</div>
+		<div class="col-sm-2 col-xs-4 text-right">
+			<a href="https://paris-hana.com/?m=inquiry/index" class="link">Contact</a>
+		</div>
+		<div class="col-sm-2 col-xs-4 text-right">
+			<a href="https://paris-hana.com/?m=pages/link" class="link">Link</a>
+		</div>
+		<div class="col-sm-2 col-xs-4 text-right">
+			<a href="https://paris-hana.com/?m=pages/company" class="link">Company</a>
+		</div>
+		<div class="col-sm-12 text-right col-xs-12">
+			<a href="" style="display: block;width: 50%;float: right;margin-top: 20px;">
+				<img src="images/base/top_footer_logo.png" style="width: 100%;">
+			</a>
+		</div>
+	</div>
+</div>
+	</footer>
+	</div>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 </body>
-<script src="js/main.js"></script>
 </html>
